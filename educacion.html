@@ -24,7 +24,64 @@
         <p> <a href="index.html"target="">Inicio </a> | <a href="educacion.html"> Educación </a> | <a href="experiencia.html"> Experiencia</a> </p>
     </nav>
     <section>
-
+      <h2>Educación</h2>
+      <p><!--TABLA CON ESTUDIOS-->
+        <table border="1px" name="Educacion">
+          <tr>
+            <td> <strong> Año </strong></td>
+            <td> <strong> Institución </strong></td>
+            <td> <strong> Estudio </strong></td>
+            <td> <strong>Lugar </strong></td>
+            <td> <strong>¿Culminó?</strong></td>
+          </tr>
+          <tr>
+            <td>2011</td>
+            <td>I.E. Pbro Bernardo Montoya G.</td>
+            <td>Bachillerato</td>
+            <td>Copacabana</td>
+            <td>SI</td>
+          </tr>
+          <tr>
+            <td>2013</td>
+            <td>SENA</td>
+            <td>Tecnología Software</td>
+            <td>Av. Ferrocarril - Centro</td>
+            <td>SI</td>
+          </tr>
+          <tr>
+            <td>2017</td>
+            <td>Fund. Univ. Católica del Norte</td>
+            <td>Ingeniería Informática</td>
+            <td>Virtual</td>
+            <td>SI</td>
+          </tr>
+        </table>
+      </p>
+      <p><!--FORMULARIO *AGREGAR ESTUDIOS*-->
+        <form autocomplete="on" name="Formulario de estudios">
+          <h2>Agregar Estudios</h2>
+              <label for="anio"><strong> Año </strong></label>
+              <select> <!--LISTA DE AÑOS-->
+                <option>Seleccione año...</option>
+                <option>2017</option>
+                <option>2016</option>
+                <option>2015</option>
+                <option>2014</option>
+                <option>2013</option>
+                <option>2012 </option>
+              </select> <br><br>
+              <label for="institucion" ><strong> Institución </strong></label>
+              <input type="text" id="institucion" placeholder="Nombre institución..." required> <br><br>
+              <label for="estudio"><strong> Estudio </strong></label>
+              <input type="text" id="estudio" placeholder="Carrera/Tecnologia..."><br><br>
+              <label for="lugar"><strong> Lugar </strong></label>
+              <textarea name="lugar" rows="2" cols="80"></textarea><br><br>
+              <label for="culmino"><strong> ¿Culminó? </strong></label>
+              Si <input type="radio" name="si">
+              No <input type="radio" name="no"><br><br>
+              <input type="submit" name="Enviar" value="Enviar">
+        </form>
+      </p>
     </section>
     <!--PIE DE PAGINA-->
         <footer>
